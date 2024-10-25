@@ -4,7 +4,8 @@
   "description": "JavaScript Expressions Lab for FIS Software Engineering",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --timeout 5000 -R mocha-multi --reporter-options spec=-,json=.results.json"
+    "test": "mocha --timeout 5000 --reporter mocha-junit-reporter",
+    "test-stdout": "mocha --timeout 5000"
   },
   "repository": {
     "type": "git",
